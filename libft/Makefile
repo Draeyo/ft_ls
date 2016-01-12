@@ -71,7 +71,10 @@ SRC = ft_atoi.c \
 	  ft_lstnew.c \
 	  ft_wstrcpy.c \
 	  ft_putwstr.c \
-	  ft_wstrlen.c
+	  ft_wstrlen.c \
+	  ft_itohex.c \
+	  ft_itoo.c \
+	  ft_uitoa.c
 
 OBJ = $(SRC:.c=.o)
 

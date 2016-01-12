@@ -13,5 +13,8 @@
 # include <time.h>
 # include <stdio.h>
 # include <string.h>
+# include "libft.h"
+
+# define DEBUG	ft_putendl("DEBUG")
 
 # endif
