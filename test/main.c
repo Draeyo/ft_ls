@@ -18,10 +18,12 @@ int				main(int ac, char **av)
 		dir_fd = ft_opendir(av[i]);
 		ft_multi_name(ac, av, i);
 		lst = ft_fill_list(entry, file, lst, dir_fd);
+		lst = ft_align_size(lst);
 		ft_putstr("total ");
 		ft_putendl(ft_total_sym(lst));
 		ft_display_la(lst);
 		ft_closedir(dir_fd);
 	}
+	free(lst);
 	return (0);
 }

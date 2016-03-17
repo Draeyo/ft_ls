@@ -1,6 +1,6 @@
 #include "ft_ls.h"
 
-int   ft_symlink(struct stat file)
+char   *ft_symlink(struct stat file)
 {
   int   ret;
 

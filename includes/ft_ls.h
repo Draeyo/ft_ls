@@ -42,8 +42,7 @@ char            *ft_bsize(struct stat file);
 char            *ft_time(struct stat file);
 char            *ft_total_sym(t_file *lst);
 char            *ft_align_right(char *str, int lenmax);
-
-int             ft_symlink(struct stat file);
+char            *ft_symlink(struct stat file);
 
 void            *ft_opendir(char *av);
 void            ft_closedir(void *dir_fd);
@@ -58,12 +57,16 @@ t_file          *ft_padding(t_file *lst);
 */
 
 void            ft_multi_name(int ac, char **av, int i);
+char            *ft_align_right(char *str, int lenmax);
+int             ft_calc_align_size(t_file *lst);
+t_file          *ft_align_size(t_file *lst);
 
 /*
 ** Utilitaires lib2
 */
 
 char            *ft_s_itoa(int nb);
+char            *ft_strnew_digit(int nb, int fill);
 int             ft_s_atoi(char *str);
 int             ft_nblen(int nb);
 
