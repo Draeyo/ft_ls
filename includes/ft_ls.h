@@ -46,8 +46,8 @@ char            *ft_symlink(struct stat file);
 
 void            *ft_opendir(char *av);
 void            ft_closedir(void *dir_fd);
-void            ft_display_la(t_file *lst);
 
+t_file          *ft_display_la(t_file *lst);
 t_file          *ft_register(struct stat file, struct dirent *entry);
 t_file          *ft_fill_list(struct dirent *entr, struct stat file, t_file *lst, void *dir_fd);
 t_file          *ft_padding(t_file *lst);

@@ -21,7 +21,7 @@ int				main(int ac, char **av)
 		lst = ft_align_size(lst);
 		ft_putstr("total ");
 		ft_putendl(ft_total_sym(lst));
-		ft_display_la(lst);
+//		ft_display_la(lst);
 		ft_closedir(dir_fd);
 	}
 	free(lst);
