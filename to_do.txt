@@ -1,4 +1,0 @@
-to do :
-
-padding de : symlinks et size
-function align_right
